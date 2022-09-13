@@ -1,0 +1,209 @@
+
+.boardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deckContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions {
+    width: fit-content;
+    margin: auto;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+
+
+
+
+}
+
+
+
+.cardPlace {
+    width: 935px;
+    height: 240px;
+    max-width: 100%;
+    border: solid 1px #ccc;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    background: rgb(77, 77, 77);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 50px;
+
+}
+
+
+.card {
+
+    padding: 20px 10px;
+    width: 150px;
+    height: 230px;
+    margin: 3px;
+    border-bottom: solid 1px rgb(155, 155, 155);
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: rgb(199, 199, 199);
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.card:last-child {
+    border: none;
+}
+
+.cardPlace.cdk-drop-list-dragging .card:not(.cdk-drag-placeholder) {
+    transition: transform 350ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.title-card {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.img-card {
+    width: 100px;
+    height: 100px;
+}
+
+.date-card {
+    visibility: hidden;
+}
+
+.btn {
+    margin-left: 1rem;
+    margin-top: 5rem;
+    display: block;
+    font-weight: lighter;
+    color: #333;
+    width: 150px;
+    height: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #ffd17b;
+    border: none;
+    outline: none;
+    outline-color: rgb(161, 160, 160);
+
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 6px #efa424;
+
+}
+
+
+
+.btn:hover {
+    box-shadow: 0px 2px #efa424;
+    top: 2px;
+
+
+}
+
+.btn:active {
+    box-shadow: 0px 0px #efa424;
+
+    top: 6px;
+}
+
+.btnResult {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: block;
+    font-weight: lighter;
+    color: #333;
+    width: 150px;
+    height: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #ffd17b;
+    border: none;
+    outline: none;
+    outline-color: rgb(161, 160, 160);
+
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 6px #efa424;
+
+}
+
+.btnResult:hover {
+    box-shadow: 0px 2px #efa424;
+    top: 2px;
+
+
+}
+
+.btnResult:active {
+    box-shadow: 0px 0px #efa424;
+    top: 6px;
+}
+
+.led {
+    width: 20px;
+    height: 20px;
+    background: rgb(196, 196, 196);
+    margin-top: 10px;
+    margin-right: 68px;
+    margin-left: 65px;
+
+    border: rgb(139, 139, 139) solid 3px;
+    border-radius: 50%;
+    box-shadow: 1px 4px rgb(218, 218, 218);
+}
+
+#led-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+
+#text-result {
+
+    align-items: center;
+
+    margin-top: 20px;
+    font-size: 2rem;
+
+}
+
+#result-buttons {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}

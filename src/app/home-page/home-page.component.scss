@@ -1,0 +1,43 @@
+
+.container{
+    margin: auto;
+    width: 100%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+#description{
+    display: flex;
+    justify-content: center;
+
+}
+
+#game-mode-container{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.game-mode{
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5%;
+    margin-right: 10px;
+    
+}
+
+.game-mode:hover{
+    background-color: rgb(219, 219, 219);
+}

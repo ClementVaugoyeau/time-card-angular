@@ -1,0 +1,65 @@
+
+
+    <div class="instructions">
+
+        
+
+        <p>Piocher puis ranger les cartes dans l'ordre chronologique</p>
+
+        
+    </div>
+
+
+    <div cdkDropListGroup>
+
+        <div class="boardContainer">
+            <div cdkDropList cdkDropListOrientation="horizontal"  [cdkDropListData]="cards3" class="cardPlace" id="board" (cdkDropListDropped)="drop($event)">
+                <div class="card" *ngFor="let item of cards3  " cdkDrag>
+                    
+                    <h3 class="title-card" >{{item.title}}</h3>
+                    <img class="img-card" [src]="item.img">
+                    <p   class="date-card">{{item.date}}</p>
+                </div>
+            </div>
+            <button class="btn" (click)="checkCards()"> Valider</button>
+        </div>
+
+        <div id="led-order">
+
+        <div class="led" id="led0"></div>
+        <div class="led" id="led1"></div>
+        <div class="led" id="led2"></div>
+        <div class="led" id="led3"></div>
+        <div class="led" id="led4"></div>
+        <div class="led" id="led5"></div>
+        </div>
+        
+        <div id="result-buttons">  
+            
+            <div id="text-result"></div>  
+            
+            <button class="btnResult" (click)="refreshPage()"> Rejouer</button>  
+            
+            <button routerLink="/" class="btnResult"  > Retour au Menu</button>  
+        
+        </div>
+
+        <div class="deckContainer">
+            <div cdkDropList cdkDropListOrientation="horizontal" [cdkDropListData]="cards2"  class="cardPlace"  (cdkDropListDropped)="drop($event)">
+                <div class="card" *ngFor="let item of cards2  " cdkDrag>
+                    
+                    <h3 class="title-card" >{{item.title}}</h3>
+                    <img class="img-card" [src]="item.img">
+                    <p class="date-card">{{item.date}}</p>
+                </div>
+            
+                
+            </div>
+        <button class="btn" (click)="generateCards()"> Piocher</button> 
+        </div>
+      
+    </div>
+
+
+
+
