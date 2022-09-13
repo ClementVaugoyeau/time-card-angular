@@ -199,7 +199,7 @@ export class CardsComponent implements OnInit {
     
     var drawCards: any = [];
    
-  fetch('assets/cardLibrary.json').then(res => res.json())
+  fetch('../assets/cardLibrary.json').then(res => res.json())
   .then(jsonData => {
     
     
